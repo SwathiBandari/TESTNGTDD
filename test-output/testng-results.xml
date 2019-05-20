@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="7" total="8" passed="1">
+<testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38375" started-at="2019-05-17T06:15:56Z" finished-at="2019-05-17T06:16:34Z">
+  <suite name="Suite" duration-ms="43045" started-at="2019-05-20T01:59:22Z" finished-at="2019-05-20T02:00:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38375" started-at="2019-05-17T06:15:56Z" finished-at="2019-05-17T06:16:34Z">
+    <test name="Test" duration-ms="43045" started-at="2019-05-20T01:59:22Z" finished-at="2019-05-20T02:00:05Z">
       <class name="com.webapp.bankapp.test.HomePageTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.webapp.bankapp.test.HomePageTest@76908cc0]" name="Setup" is-config="true" duration-ms="10443" started-at="2019-05-17T16:15:56Z" finished-at="2019-05-17T16:16:06Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="Setup" is-config="true" duration-ms="13035" started-at="2019-05-20T11:59:22Z" finished-at="2019-05-20T11:59:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="clickonAddCustomer()[pri:0, instance:com.webapp.bankapp.test.HomePageTest@76908cc0]" name="clickonAddCustomer" duration-ms="4028" started-at="2019-05-17T16:16:06Z" finished-at="2019-05-17T16:16:10Z">
+        <test-method status="PASS" signature="clickonAddCustomer()[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="clickonAddCustomer" duration-ms="6405" started-at="2019-05-20T11:59:35Z" finished-at="2019-05-20T11:59:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickonAddCustomer -->
-        <test-method status="FAIL" signature="newcustomerdata(java.lang.String, java.lang.String, java.util.Date, java.lang.String, java.lang.String, java.lang.String, int, double, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@76908cc0]" name="newcustomerdata" duration-ms="17" started-at="2019-05-17T16:16:34Z" data-provider="getcustdata" finished-at="2019-05-17T16:16:34Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="3771" started-at="2019-05-20T11:59:43Z" data-provider="getcustdata" finished-at="2019-05-20T11:59:47Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[20-Oct-1985]]>
+                <![CDATA[20/91/85]]>
               </value>
             </param>
             <param index="3">
@@ -63,43 +63,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[argument type mismatch]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="FAIL" signature="newcustomerdata(java.lang.String, java.lang.String, java.util.Date, java.lang.String, java.lang.String, java.lang.String, int, double, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@76908cc0]" name="newcustomerdata" duration-ms="8" started-at="2019-05-17T16:16:34Z" data-provider="getcustdata" finished-at="2019-05-17T16:16:34Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="3168" started-at="2019-05-20T11:59:47Z" data-provider="getcustdata" finished-at="2019-05-20T11:59:50Z">
           <params>
             <param index="0">
               <value>
@@ -113,7 +80,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[12-Dec-2000]]>
+                <![CDATA[12/111/00]]>
               </value>
             </param>
             <param index="3">
@@ -147,43 +114,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[argument type mismatch]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="FAIL" signature="newcustomerdata(java.lang.String, java.lang.String, java.util.Date, java.lang.String, java.lang.String, java.lang.String, int, double, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@76908cc0]" name="newcustomerdata" duration-ms="3" started-at="2019-05-17T16:16:34Z" data-provider="getcustdata" finished-at="2019-05-17T16:16:34Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="3058" started-at="2019-05-20T11:59:50Z" data-provider="getcustdata" finished-at="2019-05-20T11:59:53Z">
           <params>
             <param index="0">
               <value>
@@ -197,7 +131,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[03-May-1989]]>
+                <![CDATA[3/41/89]]>
               </value>
             </param>
             <param index="3">
@@ -231,43 +165,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[argument type mismatch]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="FAIL" signature="newcustomerdata(java.lang.String, java.lang.String, java.util.Date, java.lang.String, java.lang.String, java.lang.String, int, double, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@76908cc0]" name="newcustomerdata" duration-ms="5" started-at="2019-05-17T16:16:34Z" data-provider="getcustdata" finished-at="2019-05-17T16:16:34Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="3090" started-at="2019-05-20T11:59:53Z" data-provider="getcustdata" finished-at="2019-05-20T11:59:56Z">
           <params>
             <param index="0">
               <value>
@@ -281,7 +182,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[22-Jun-1988]]>
+                <![CDATA[22/51/88]]>
               </value>
             </param>
             <param index="3">
@@ -315,43 +216,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[argument type mismatch]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="FAIL" signature="newcustomerdata(java.lang.String, java.lang.String, java.util.Date, java.lang.String, java.lang.String, java.lang.String, int, double, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@76908cc0]" name="newcustomerdata" duration-ms="2" started-at="2019-05-17T16:16:34Z" data-provider="getcustdata" finished-at="2019-05-17T16:16:34Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="2962" started-at="2019-05-20T11:59:56Z" data-provider="getcustdata" finished-at="2019-05-20T11:59:59Z">
           <params>
             <param index="0">
               <value>
@@ -365,7 +233,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[23-Oct-1978]]>
+                <![CDATA[23/91/78]]>
               </value>
             </param>
             <param index="3">
@@ -399,43 +267,10 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[argument type mismatch]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="FAIL" signature="newcustomerdata(java.lang.String, java.lang.String, java.util.Date, java.lang.String, java.lang.String, java.lang.String, int, double, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@76908cc0]" name="newcustomerdata" duration-ms="5" started-at="2019-05-17T16:16:34Z" data-provider="getcustdata" finished-at="2019-05-17T16:16:34Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="3202" started-at="2019-05-20T11:59:59Z" data-provider="getcustdata" finished-at="2019-05-20T12:00:02Z">
           <params>
             <param index="0">
               <value>
@@ -449,7 +284,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[22-Nov-1988]]>
+                <![CDATA[22/101/88]]>
               </value>
             </param>
             <param index="3">
@@ -483,110 +318,65 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[argument type mismatch]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: argument type mismatch
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="FAIL" signature="newcustomerdata(java.lang.String, java.lang.String, java.util.Date, java.lang.String, java.lang.String, java.lang.String, int, double, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@76908cc0]" name="newcustomerdata" duration-ms="3" started-at="2019-05-17T16:16:34Z" data-provider="getcustdata" finished-at="2019-05-17T16:16:34Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="3046" started-at="2019-05-20T12:00:02Z" data-provider="getcustdata" finished-at="2019-05-20T12:00:05Z">
           <params>
             <param index="0">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[TestSeven]]>
+              </value>
             </param>
             <param index="1">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[Female]]>
+              </value>
             </param>
             <param index="2">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[22/91/74]]>
+              </value>
             </param>
             <param index="3">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[unit 678 ngyae]]>
+              </value>
             </param>
             <param index="4">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[Blacktown]]>
+              </value>
             </param>
             <param index="5">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[NSW]]>
+              </value>
             </param>
             <param index="6">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[236687.0]]>
+              </value>
             </param>
             <param index="7">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[1.2154574E7]]>
+              </value>
             </param>
             <param index="8">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[Testseven@gmail.com]]>
+              </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.webapp.bankapp.test.HomePageTest@76908cc0]" name="cleanUp" is-config="true" duration-ms="858" started-at="2019-05-17T16:16:34Z" finished-at="2019-05-17T16:16:35Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="cleanUp" is-config="true" duration-ms="1017" started-at="2019-05-20T12:00:06Z" finished-at="2019-05-20T12:00:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
       </class> <!-- com.webapp.bankapp.test.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

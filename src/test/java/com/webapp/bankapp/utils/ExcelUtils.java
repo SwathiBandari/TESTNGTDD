@@ -1,60 +1,32 @@
 package com.webapp.bankapp.utils;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.DataFormatter;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import java.util.ArrayList;
 
 public class ExcelUtils {
-	String cellValue;
-	Sheet custdatasheet;
-	Row Row;
-	Cell cell;
-	public static Object[][] Logindata;
+	static Xls_Reader reader;
 
-	public Object[][] Readcustdata() throws IOException {
-		// Create a DataFormatter to format and get each cell's value as String
-		DataFormatter data = new DataFormatter();
-		FileInputStream custfile = new FileInputStream("resources/NewCustomerdata.xlsx");
-		Workbook wb = new XSSFWorkbook(custfile);
-		custdatasheet = wb.getSheetAt(0);
-		int rowcount = custdatasheet.getLastRowNum();
-		int colcount = custdatasheet.getRow(0).getLastCellNum();
-		Logindata = new Object[rowcount][colcount];
-		System.out.println("Row count ---"+rowcount);
-		for (int rCnt = 1; rCnt < rowcount; rCnt++) {
-			for (int cCnt = 0; cCnt < colcount; cCnt++) {
-				Logindata[rCnt-1][cCnt] = custdatasheet.getRow(rCnt).getCell(cCnt);
-				System.out.println(Logindata[rCnt-1][cCnt]);
+	public static ArrayList<Object[]> Readcustdatafromexcel() {
+		ArrayList<Object[]> custdata = new ArrayList<Object[]>();
+		
+		try {
+			reader = new Xls_Reader("resources/NewCustomerdata.xlsx");
 			}
-			System.out.println("in each row----->" + Logindata);
-			}
-		System.out.println("After whole function -->>>" + Logindata);
-		return Logindata;
-		//added
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		for(int rownum=2;rownum<=reader.getRowCount("sheet1");rownum++) {
+			String customername = reader.getCellData("sheet1", "CustomerName", rownum);
+			String Gender = reader.getCellData("sheet1", "Gender", rownum);
+			String dob	= reader.getCellData("sheet1", "DateofBirth", rownum);
+			String Address = reader.getCellData("sheet1", "Address", rownum);
+			String City = reader.getCellData("sheet1", "City", rownum);
+			String State = reader.getCellData("sheet1", "State", rownum);
+			String pincode = reader.getCellData("sheet1", "PIN", rownum);
+			String Phonenumber = reader.getCellData("sheet1", "TelephoneNumber", rownum);
+			String Mailid = reader.getCellData("sheet1", "Email", rownum);
+			Object obj[] = {customername,Gender,dob,Address,City,State,pincode,Phonenumber,Mailid};
+		custdata.add(obj);
 	}
-}
-
-//				FileInputStream custfile = new FileInputStream("resources/NewCustomerdata.xlsx");
-//				Workbook wb = new XSSFWorkbook(custfile);
-//				Sheet custdata = wb.getSheetAt(0);
-//				// 1. You can obtain a rowIterator and columnIterator and iterate over them
-//				System.out.println("\n\nIterating over Rows and Columns using Iterator\n");
-//				Iterator<Row> rowIterator = custdata.rowIterator();
-//				while (rowIterator.hasNext()) {
-//
-//					Row row = rowIterator.next();
-//					if (row.getRowNum() == 0) {
-//						row = rowIterator.next();
-//					}
-//					// Now let's iterate over the columns of the current row
-//					Iterator<Cell> cellIterator = row.cellIterator();
-//
-//					while (cellIterator.hasNext()) {
-//						Cell cell = cellIterator.next();
-//						cellValue = data.formatCellValue(cell);
-//						System.out.print(cellValue + "\t");
+		return custdata;
+		
+	}}
