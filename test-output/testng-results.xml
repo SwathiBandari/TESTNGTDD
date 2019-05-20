@@ -2,381 +2,381 @@
 <testng-results skipped="0" failed="0" total="8" passed="8">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="43045" started-at="2019-05-20T01:59:22Z" finished-at="2019-05-20T02:00:05Z">
+  <suite name="Default suite" duration-ms="67015" started-at="2019-05-20T05:42:19Z" finished-at="2019-05-20T05:43:26Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="43045" started-at="2019-05-20T01:59:22Z" finished-at="2019-05-20T02:00:05Z">
+    <test name="Default test" duration-ms="67015" started-at="2019-05-20T05:42:19Z" finished-at="2019-05-20T05:43:26Z">
       <class name="com.webapp.bankapp.test.HomePageTest">
-        <test-method status="PASS" signature="Setup()[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="Setup" is-config="true" duration-ms="13035" started-at="2019-05-20T11:59:22Z" finished-at="2019-05-20T11:59:35Z">
+        <test-method status="PASS" signature="Setup()[pri:0, instance:com.webapp.bankapp.test.HomePageTest@2a2d45ba]" name="Setup" is-config="true" duration-ms="24912" started-at="2019-05-20T15:42:19Z" finished-at="2019-05-20T15:42:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method status="PASS" signature="clickonAddCustomer()[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="clickonAddCustomer" duration-ms="6405" started-at="2019-05-20T11:59:35Z" finished-at="2019-05-20T11:59:42Z">
+        <test-method status="PASS" signature="clickonAddCustomer()[pri:0, instance:com.webapp.bankapp.test.HomePageTest@2a2d45ba]" name="clickonAddCustomer" duration-ms="6871" started-at="2019-05-20T15:42:44Z" finished-at="2019-05-20T15:42:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickonAddCustomer -->
-        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="3771" started-at="2019-05-20T11:59:43Z" data-provider="getcustdata" finished-at="2019-05-20T11:59:47Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@2a2d45ba]" name="newcustomerdata" duration-ms="6628" started-at="2019-05-20T15:42:55Z" data-provider="getcustdata" finished-at="2019-05-20T15:43:01Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Testone]]>
+                <![CDATA[row 2 or column CustomerName does not exist in xls]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Male]]>
+                <![CDATA[row 2 or column Gender does not exist in xls]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[20/91/85]]>
+                <![CDATA[row 2 or column DateofBirth does not exist in xls]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[unit 12 gwh]]>
+                <![CDATA[row 2 or column Address does not exist in xls]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Wentwothville]]>
+                <![CDATA[row 2 or column City does not exist in xls]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[NSW]]>
+                <![CDATA[row 2 or column State does not exist in xls]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[214515.0]]>
+                <![CDATA[row 2 or column PIN does not exist in xls]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[3.1548794E7]]>
+                <![CDATA[row 2 or column TelephoneNumber does not exist in xls]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[Testone@gmail.com]]>
+                <![CDATA[row 2 or column Email does not exist in xls]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="3168" started-at="2019-05-20T11:59:47Z" data-provider="getcustdata" finished-at="2019-05-20T11:59:50Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@2a2d45ba]" name="newcustomerdata" duration-ms="3681" started-at="2019-05-20T15:43:01Z" data-provider="getcustdata" finished-at="2019-05-20T15:43:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[TestTwo]]>
+                <![CDATA[row 3 or column CustomerName does not exist in xls]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Female]]>
+                <![CDATA[row 3 or column Gender does not exist in xls]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[12/111/00]]>
+                <![CDATA[row 3 or column DateofBirth does not exist in xls]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[unit12 gter]]>
+                <![CDATA[row 3 or column Address does not exist in xls]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Wynyard]]>
+                <![CDATA[row 3 or column City does not exist in xls]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[NSW]]>
+                <![CDATA[row 3 or column State does not exist in xls]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[220120.0]]>
+                <![CDATA[row 3 or column PIN does not exist in xls]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[5.2188454E7]]>
+                <![CDATA[row 3 or column TelephoneNumber does not exist in xls]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[Testtwo@gmail.com]]>
+                <![CDATA[row 3 or column Email does not exist in xls]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="3058" started-at="2019-05-20T11:59:50Z" data-provider="getcustdata" finished-at="2019-05-20T11:59:53Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@2a2d45ba]" name="newcustomerdata" duration-ms="5525" started-at="2019-05-20T15:43:05Z" data-provider="getcustdata" finished-at="2019-05-20T15:43:10Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[TestThree]]>
+                <![CDATA[row 4 or column CustomerName does not exist in xls]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Male]]>
+                <![CDATA[row 4 or column Gender does not exist in xls]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[3/41/89]]>
+                <![CDATA[row 4 or column DateofBirth does not exist in xls]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[unit 123 abcd]]>
+                <![CDATA[row 4 or column Address does not exist in xls]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[TownHall]]>
+                <![CDATA[row 4 or column City does not exist in xls]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[NSW]]>
+                <![CDATA[row 4 or column State does not exist in xls]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[121245.0]]>
+                <![CDATA[row 4 or column PIN does not exist in xls]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[5.2154578E7]]>
+                <![CDATA[row 4 or column TelephoneNumber does not exist in xls]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[testthree@gmail.com]]>
+                <![CDATA[row 4 or column Email does not exist in xls]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="3090" started-at="2019-05-20T11:59:53Z" data-provider="getcustdata" finished-at="2019-05-20T11:59:56Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@2a2d45ba]" name="newcustomerdata" duration-ms="3966" started-at="2019-05-20T15:43:10Z" data-provider="getcustdata" finished-at="2019-05-20T15:43:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[TestFour]]>
+                <![CDATA[row 5 or column CustomerName does not exist in xls]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Female]]>
+                <![CDATA[row 5 or column Gender does not exist in xls]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[22/51/88]]>
+                <![CDATA[row 5 or column DateofBirth does not exist in xls]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[unit 124 badcs]]>
+                <![CDATA[row 5 or column Address does not exist in xls]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Central]]>
+                <![CDATA[row 5 or column City does not exist in xls]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[NSW]]>
+                <![CDATA[row 5 or column State does not exist in xls]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[214587.0]]>
+                <![CDATA[row 5 or column PIN does not exist in xls]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[4.2154878E7]]>
+                <![CDATA[row 5 or column TelephoneNumber does not exist in xls]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[testfour@gmail.com]]>
+                <![CDATA[row 5 or column Email does not exist in xls]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="2962" started-at="2019-05-20T11:59:56Z" data-provider="getcustdata" finished-at="2019-05-20T11:59:59Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@2a2d45ba]" name="newcustomerdata" duration-ms="3685" started-at="2019-05-20T15:43:14Z" data-provider="getcustdata" finished-at="2019-05-20T15:43:18Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[TestFive]]>
+                <![CDATA[row 6 or column CustomerName does not exist in xls]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Male]]>
+                <![CDATA[row 6 or column Gender does not exist in xls]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[23/91/78]]>
+                <![CDATA[row 6 or column DateofBirth does not exist in xls]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[unit 9989 zxcv]]>
+                <![CDATA[row 6 or column Address does not exist in xls]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Clyde]]>
+                <![CDATA[row 6 or column City does not exist in xls]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[NSW]]>
+                <![CDATA[row 6 or column State does not exist in xls]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[234548.0]]>
+                <![CDATA[row 6 or column PIN does not exist in xls]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[3.2154878E7]]>
+                <![CDATA[row 6 or column TelephoneNumber does not exist in xls]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[testfive@gmail.com]]>
+                <![CDATA[row 6 or column Email does not exist in xls]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="3202" started-at="2019-05-20T11:59:59Z" data-provider="getcustdata" finished-at="2019-05-20T12:00:02Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@2a2d45ba]" name="newcustomerdata" duration-ms="3741" started-at="2019-05-20T15:43:18Z" data-provider="getcustdata" finished-at="2019-05-20T15:43:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[TestSix]]>
+                <![CDATA[row 7 or column CustomerName does not exist in xls]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Male]]>
+                <![CDATA[row 7 or column Gender does not exist in xls]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[22/101/88]]>
+                <![CDATA[row 7 or column DateofBirth does not exist in xls]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[unit 6573 nbiyd]]>
+                <![CDATA[row 7 or column Address does not exist in xls]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Paramatta]]>
+                <![CDATA[row 7 or column City does not exist in xls]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[NSW]]>
+                <![CDATA[row 7 or column State does not exist in xls]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[235688.0]]>
+                <![CDATA[row 7 or column PIN does not exist in xls]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[1.4548779E7]]>
+                <![CDATA[row 7 or column TelephoneNumber does not exist in xls]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[testsix@gmail.com]]>
+                <![CDATA[row 7 or column Email does not exist in xls]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="newcustomerdata" duration-ms="3046" started-at="2019-05-20T12:00:02Z" data-provider="getcustdata" finished-at="2019-05-20T12:00:05Z">
+        <test-method status="PASS" signature="newcustomerdata(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.webapp.bankapp.test.HomePageTest@2a2d45ba]" name="newcustomerdata" duration-ms="3765" started-at="2019-05-20T15:43:22Z" data-provider="getcustdata" finished-at="2019-05-20T15:43:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[TestSeven]]>
+                <![CDATA[row 8 or column CustomerName does not exist in xls]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Female]]>
+                <![CDATA[row 8 or column Gender does not exist in xls]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[22/91/74]]>
+                <![CDATA[row 8 or column DateofBirth does not exist in xls]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[unit 678 ngyae]]>
+                <![CDATA[row 8 or column Address does not exist in xls]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[Blacktown]]>
+                <![CDATA[row 8 or column City does not exist in xls]]>
               </value>
             </param>
             <param index="5">
               <value>
-                <![CDATA[NSW]]>
+                <![CDATA[row 8 or column State does not exist in xls]]>
               </value>
             </param>
             <param index="6">
               <value>
-                <![CDATA[236687.0]]>
+                <![CDATA[row 8 or column PIN does not exist in xls]]>
               </value>
             </param>
             <param index="7">
               <value>
-                <![CDATA[1.2154574E7]]>
+                <![CDATA[row 8 or column TelephoneNumber does not exist in xls]]>
               </value>
             </param>
             <param index="8">
               <value>
-                <![CDATA[Testseven@gmail.com]]>
+                <![CDATA[row 8 or column Email does not exist in xls]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newcustomerdata -->
-        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.webapp.bankapp.test.HomePageTest@1753acfe]" name="cleanUp" is-config="true" duration-ms="1017" started-at="2019-05-20T12:00:06Z" finished-at="2019-05-20T12:00:07Z">
+        <test-method status="PASS" signature="cleanUp()[pri:0, instance:com.webapp.bankapp.test.HomePageTest@2a2d45ba]" name="cleanUp" is-config="true" duration-ms="809" started-at="2019-05-20T15:43:26Z" finished-at="2019-05-20T15:43:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
       </class> <!-- com.webapp.bankapp.test.HomePageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

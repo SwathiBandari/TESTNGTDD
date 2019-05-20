@@ -29,13 +29,15 @@ public class HomePageTest extends BaseTest {
 public void newcustomerdata(String customername,String Gender,String dob,String Address,String City,String State,String pincode,String Phonenumber,String Mailid) {
 	NewCustomerAddPage Np = new NewCustomerAddPage(driver);
 	Np.clickaddnewcustomer();
-	Np.addnewcust(customername, Gender, dob, Address, City, State, pincode, Phonenumber, Mailid);
+	Np.addnewcust(customername,Gender,dob,Address,City,State,pincode,Phonenumber,Mailid);
+	
 }	
 
 @DataProvider
 public static Iterator<Object[]> getcustdata() throws IOException {
 
 ArrayList<Object[]> testdata = ExcelUtils.Readcustdatafromexcel();
+System.out.println(testdata);
 return testdata.iterator();
 	
 }

@@ -15,7 +15,7 @@ public class ExcelUtils {
 			e.printStackTrace();
 		}
 		for(int rownum=2;rownum<=reader.getRowCount("sheet1");rownum++) {
-			String customername = reader.getCellData("sheet1", "CustomerName", rownum);
+ 			String customername = reader.getCellData("sheet1", "CustomerName", rownum);
 			String Gender = reader.getCellData("sheet1", "Gender", rownum);
 			String dob	= reader.getCellData("sheet1", "DateofBirth", rownum);
 			String Address = reader.getCellData("sheet1", "Address", rownum);
