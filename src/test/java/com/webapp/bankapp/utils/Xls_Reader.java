@@ -3,16 +3,23 @@ package com.webapp.bankapp.utils;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 import org.apache.poi.common.usermodel.HyperlinkType;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.util.HSSFColor;
+import org.apache.poi.ss.format.CellDateFormatter;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.DataFormat;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.IndexedColors;
+import org.apache.poi.ss.util.DateFormatConverter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFCreationHelper;
@@ -34,6 +41,7 @@ public class Xls_Reader {
 	private XSSFSheet sheet = null;
 	private XSSFRow row = null;
 	private XSSFCell cell = null;
+	private Date date;
 
 	public Xls_Reader(String path) {
 
@@ -71,7 +79,8 @@ public class Xls_Reader {
 			return number;
 		}
 	}
-	// returns the data from a cell
+	
+		// returns the data from a cell
 
 	public String getCellData(String sheetName,String colName,int rowNum)
 	{
@@ -102,25 +111,18 @@ public class Xls_Reader {
 	System.out.println(cell.getCellType());
 	if(cell.getCellType()==CellType.STRING)
 	return cell.getStringCellValue();
-	else if(cell.getCellType()==CellType.NUMERIC || cell.getCellType()==CellType.FORMULA)
+	else if(cell.getCellType()==CellType.NUMERIC || cell.getCellType()==CellType.FORMULA )
 	{
-	String cellText  = String.valueOf(cell.getNumericCellValue());
-   if (HSSFDateUtil.isCellDateFormatted(cell)) 
-	{
-	   // format in form of M/D/YY
-	  String d = cell.getStringCellValue();
-	  System.out.println("d value"+d);
-	  Calendar cal =Calendar.getInstance();
-	  cal.setTime(HSSFDateUtil.getExcelDate(d));
-	  //cal.setTime(HSSFDateUtil.getExcelDate(d));
-	  System.out.println("calender String value"+String.valueOf(cal.get(Calendar.YEAR)));
-      cellText=(String.valueOf(cal.get(cal.YEAR)));
-      System.out.println("Before"+cellText);
-      cellText = cal.get(Calendar.DAY_OF_MONTH) + "/" + cal.get(Calendar.MONTH)+1 + "/" + cellText;
-	System.out.println("date"+cellText);              
-      }            
-  return cellText;
-	 }
+		DataFormatter dt = new DataFormatter();
+		String cellText  = dt.formatCellValue(cell);
+	   if (HSSFDateUtil.isCellDateFormatted(cell)) 
+	{  
+		   DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+		   cellText = dateFormat.format(cell.getDateCellValue());
+		   System.out.println(cellText);
+		      			   }   
+	   return cellText;
+	   	}
 	else if(cell.getCellType()==CellType.BLANK)
    return ""; 
 	 else 
@@ -131,7 +133,13 @@ public class Xls_Reader {
 					e.printStackTrace();
 					return "row "+rowNum+" or column "+colName +" does not exist in xls";
 				}
+	
 			}
+
+	private String gettext(XSSFCell cell2) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 	// returns the data from a cell
 	public String getCellData(String sheetName, int colNum, int rowNum) {

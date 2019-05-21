@@ -17,7 +17,7 @@ public class ExcelUtils {
 		for(int rownum=2;rownum<=reader.getRowCount("sheet1");rownum++) {
  			String customername = reader.getCellData("sheet1", "CustomerName", rownum);
 			String Gender = reader.getCellData("sheet1", "Gender", rownum);
-			String dob	= reader.getCellData("sheet1", "DateofBirth", rownum);
+		String dob	= reader.getCellData("sheet1", "DateofBirth", rownum);
 			String Address = reader.getCellData("sheet1", "Address", rownum);
 			String City = reader.getCellData("sheet1", "City", rownum);
 			String State = reader.getCellData("sheet1", "State", rownum);
